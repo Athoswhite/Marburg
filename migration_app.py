@@ -185,4 +185,4 @@ By implementing these strategies, we can reduce the spread of Marburg virus and 
 world = gpd.read_file(gpd.datasets.get_path('naturalearth_lowres'))
 
 # Merge the country data with the world map
-map_data = world.set_index('name[_{{{CITATION{{{_1{](https://github.com/rafaelmata357/Track-and-graph-covid-data/tree/0f618edaf3c61f89fb047ce9a2e1a4f94661686c/covid_track_graph.py)
+map_data = world.set_index('name[_{{{CITATION{{{_1{](https://github.com/rafaelmata357/Track-and-graph-covid-data/tree/0f618edaf3c61f89fb047ce9a2e1a4f94661686c/covid_track_graph.py')
