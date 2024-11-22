@@ -3,6 +3,7 @@ import numpy as np
 import xgboost as xgb
 import streamlit as st
 import matplotlib.pyplot as plt
+import geopandas as gpd  # For map visualization
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import mean_squared_error, r2_score
 from sklearn.preprocessing import MinMaxScaler
@@ -149,3 +150,39 @@ plt.tight_layout()
 
 # Display the plot in Streamlit
 st.pyplot(plt)
+
+# Step 6: Remedies and Preventions
+st.header("Remedies and Prevention Approaches")
+st.write("""
+To control the spread of Marburg virus, it is crucial to implement effective remedies and prevention measures such as:
+
+1. **Public Health Measures**:
+   - Quarantine and isolation of infected individuals.
+   - Contact tracing and monitoring.
+   - Implementation of travel restrictions to and from affected areas.
+
+2. **Health Education**:
+   - Educating the public about the transmission and symptoms of Marburg virus.
+   - Promoting good hygiene practices, such as regular hand washing and sanitizing.
+
+3. **Healthcare Infrastructure**:
+   - Ensuring that healthcare facilities are equipped with the necessary resources to handle outbreaks.
+   - Training healthcare workers on how to manage and treat Marburg virus cases safely.
+
+4. **Research and Development**:
+   - Encouraging research into vaccines and treatments for Marburg virus.
+   - Supporting the development and deployment of rapid diagnostic tests.
+
+5. **Community Engagement**:
+   - Working closely with local communities to raise awareness and encourage cooperation with public health measures.
+   - Addressing myths and misconceptions about the virus through targeted communication strategies.
+
+By implementing these strategies, we can reduce the spread of Marburg virus and protect public health.
+""")
+
+# Step 7: Map Visualization
+# Load a world map
+world = gpd.read_file(gpd.datasets.get_path('naturalearth_lowres'))
+
+# Merge the country data with the world map
+map_data = world.set_index('name[_{{{CITATION{{{_1{](https://github.com/rafaelmata357/Track-and-graph-covid-data/tree/0f618edaf3c61f89fb047ce9a2e1a4f94661686c/covid_track_graph.py)
