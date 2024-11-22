@@ -3,7 +3,6 @@ import numpy as np
 import xgboost as xgb
 import streamlit as st
 import matplotlib.pyplot as plt
-import geopandas as gpd  # For map visualization
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import mean_squared_error, r2_score
 from sklearn.preprocessing import MinMaxScaler
@@ -179,10 +178,3 @@ To control the spread of Marburg virus, it is crucial to implement effective rem
 
 By implementing these strategies, we can reduce the spread of Marburg virus and protect public health.
 """)
-
-# Step 7: Map Visualization
-# Load a world map
-world = gpd.read_file(gpd.datasets.get_path('naturalearth_lowres'))
-
-# Merge the country data with the world map
-map_data = world.set_index('name[_{{{CITATION{{{_1{](https://github.com/rafaelmata357/Track-and-graph-covid-data/tree/0f618edaf3c61f89fb047ce9a2e1a4f94661686c/covid_track_graph.py')
