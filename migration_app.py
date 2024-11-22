@@ -77,7 +77,7 @@ for country, data in data_dict.items():
     models[country] = model
 
 # Step 3: Setup Streamlit UI for Country Selection
-st.title("COVID-19 Total Cases Prediction by Country")
+st.title("MARBURG Total Cases Prediction by Country")
 
 # List of countries to choose from
 country_choices = list(countries)
