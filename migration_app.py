@@ -10,8 +10,22 @@ from sklearn.preprocessing import MinMaxScaler
 # Step 1: Generate Fake Data for 10 African Countries
 np.random.seed(42)
 countries = [
-    "Nigeria", "Ethiopia", "Egypt", "Democratic Republic of the Congo", "Tanzania",
-    "South Africa", "Kenya", "Uganda", "Sudan", "Algeria", "Rwanda"
+    'Andorra', 'Argentina', 'Aruba', 'Australia', 'Austria', 'Bahamas', 'Bahrain', 'Barbados',
+    'Belgium', 'Benin', 'Bermuda', 'Bolivia', 'Bosnia and Herzegovina', 'Brazil', 'Bulgaria',
+    'Burundi', 'Cambodia', 'Cameroon', 'Canada', 'Central African Republic', 'Chile', 'China',
+    'Colombia', 'Congo', 'Costa Rica', 'Cote d\'Ivoire', 'Croatia', 'Cuba', 'Curacao', 'Cyprus',
+    'Czechia', 'Democratic Republic of Congo', 'Denmark', 'Dominican Republic', 'Ecuador', 'Egypt',
+    'El Salvador', 'Estonia', 'Finland', 'France', 'Gabon', 'Georgia', 'Germany', 'Ghana', 'Gibraltar',
+    'Greece', 'Greenland', 'Guadeloupe', 'Guam', 'Guatemala', 'Guinea', 'Guyana', 'Honduras', 'Hungary',
+    'Iceland', 'India', 'Indonesia', 'Iran', 'Ireland', 'Israel', 'Italy', 'Jamaica', 'Japan', 'Jordan',
+    'Kenya', 'Laos', 'Latvia', 'Lebanon', 'Liberia', 'Lithuania', 'Luxembourg', 'Malaysia', 'Malta',
+    'Martinique', 'Mexico', 'Moldova', 'Monaco', 'Montenegro', 'Morocco', 'Mozambique', 'Nepal', 'Netherlands',
+    'New Caledonia', 'New Zealand', 'Nigeria', 'Norway', 'Oman', 'Pakistan', 'Panama', 'Paraguay', 'Peru',
+    'Philippines', 'Poland', 'Portugal', 'Qatar', 'Romania', 'Russia', 'Rwanda', 'Saint Martin (French part)',
+    'San Marino', 'Saudi Arabia', 'Serbia', 'Singapore', 'Slovakia', 'Slovenia', 'South Africa', 'South Korea',
+    'Spain', 'Sri Lanka', 'Sudan', 'Sweden', 'Switzerland', 'Thailand', 'Trinidad and Tobago', 'Turkey',
+    'Uganda', 'Ukraine', 'United Arab Emirates', 'United Kingdom', 'United States', 'Uruguay', 'Venezuela',
+    'Vietnam', 'Zambia', 'Zimbabwe'
 ]
 
 # Create fake data for each country
